@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <header>
+        <h1>Разработка игр</h1>
+        <p>Изучение и создание игр</p>
+        <img class="logo" src="https://i.imgur.com/OQPHRxM.png" alt="Логотип">
+        <nav>
+            <a href="rabotado24.html">Главная</a>
+            <a href="contact.html">Контакты</a>
+            <a href="#">Наши игры</a>
+            <a href="#">О нас</a>
+            <a href="#">Техническая поддержка</a>
+        </nav>
+    </header>
+
+<div class="contact-card">
+    <h2>Наши контакты</h2>
+    <p>Email: tahkpobep@gmail.com</p>
+    <p>Телефон: +79807818679</p>
+    <p>Адрес: Мичуринская 112А</p>
+    <button onclick="showContactForm1()">Написать нам</button>
+</div>
+
+<div class="contact-form" id="contactForm">
+    <h2>Написать нам</h2>
+    <form id="myForm">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Сообщение:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Отправить</button>
+    </form> 
+</div>
+
+
+<div class="modal" id="meModal">
+    <div class="modal-content">
+        <p>Данные успешно получены, нажмите в любое место на экране</p>
+        <bu class="close-button" onclick="closeModalWindow()">Закрыть</bu>
+    </div>
+</div>
+
+<div class="overlay" id="overlay"></div>
+
+    <footer>
+        2023 GMstudio
+    </footer>
+
+    <script>
+
+        function showContactForm1() {
+            contactForm.style.display = 'block';
+            modal.style.display = 'block';
+        }
+
+        function showContactForm() {
+            var contactForm = document.getElementById('contactForm');
+            var overlay = document.getElementById('overlay');
+            var modal = document.getElementById('meModal');
+
+            contactForm.style.display = 'block';
+            overlay.style.display = 'block';
+            modal.style.display = 'block';
+
+            document.getElementById('myForm').reset();
+        }
+
+        function closeModalWindow() {
+            var overlay = document.getElementById('overlay');
+            var modal = document.getElementById('meModal');
+
+            overlay.style.display = 'none';
+            modal.style.display = 'none';
+        }
+        document.getElementById('myForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+        showContactForm();
+    });
+    
+    </script>
+    </body>
+</html>
