@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Playfair+Display:wght@400;500;600&family=Ubuntu:ital,wght@0,400;0,500;1,400&display=swap');
+
+body {
+    background-image: url('../img/Background.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    
+    color: #83C5AC;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.logoimg {
+    width: 30%;
+    height: auto;
+}
+
+.logotype {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 300%;
+    color: #83C5AC;
+    width: 100%;
+    height: 100vh;
+
+
+}
+
+.line {
+    width: 55%;
+    margin: 0 auto;
+    background-color: #4A287E;
+    height: 3px;
+    border: none;
+    margin-bottom: 15%;
+}
+
+.we {
+    height: 100vh;
+    width: auto;
+}
+
+.developers {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4%;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3%;
+    margin-bottom: 3%;
+}
+
+.nameH {
+    margin-right: 10%;
+}
+
+
+.nameT {
+    margin-left: 10%;
+}
+
+.name a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #83C5AC;
+}
+
+.nameH a {
+    margin-left: 50%;
+}
+
+.nameE a {
+    margin-left: 36%;
+}
+
+.nameT a {
+    margin-left: 26%;
+}
+
+.name img {
+    position: relative;
+    margin-right: 5%;
+    margin-left: 4%;
+}
+
+.nameH img {
+    max-width: 315px;
+    height: auto;
+}
+
+.nameE img {
+    max-width: 250px;
+    height: auto;
+    margin-top: 10%;
+}
+
+.nameT img {
+    max-width: 315px;
+    height: auto;
+
+}
+
+.developers_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0% 32.5%;
+    height: 15%;
+    width: 35%;
+    font-size: 18px;
+}
+
+
+.infoset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+._infoset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+._infoset a {
+    text-decoration: none;
+    background-color: #4A287E;
+    color: #83C5AC;
+    padding: 20px 60px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    transition: color 0.5s;
+    transition: transform 0.3s ease-in-out;
+    max-width: 70px;
+    margin: 7% 1% 0 1%;
+}
+
+._infoset a:hover {
+    background-color: #83C5AC;
+    color: #4A287E;
+    transform: scale(1.15);
+}
+

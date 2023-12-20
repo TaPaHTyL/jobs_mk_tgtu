@@ -1,0 +1,71 @@
+body {
+    background-image: url('../img/Background.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    background-attachment: fixed;
+    color: #83C5AC;
+    font-family: 'Ubuntu', sans-serif;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main h1{
+    text-align: center;
+    font-size: 30px;
+}
+main p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0% 32.5%;
+    height: 15%;
+    width: 35%;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 16px #000000;
+    padding: 30px;
+    border-radius: 32px;
+}
+.blocks{
+    margin: 30px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-block{
+    margin: 40px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.2);
+    
+    height: 600px;
+    width: 300px;
+    padding: 0px;
+    border-radius: 20px;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 0 4px 16px #000000;
+}
+.container-block h1{
+    text-align: center;
+    font-size: 22px;
+}
+.container-block h2{
+    padding-left: 20px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.container-block:hover{
+    transform: scale(1.15);
+}
+.container-block-icons{
+    width: inherit;
+    border-radius: 20px 20px 0px 0px;
+    
+}
